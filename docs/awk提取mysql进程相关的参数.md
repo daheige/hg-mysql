@@ -9,5 +9,3 @@
         mysqladmin -uroot -p1234 extended-status | awk '/Queries/{q=$4}/Threads_connected/{c=$4}/Threads_running/{r=$4}END{printf("q=%d c=%d r=%d \n",q,c,r)}';
         q=349 c=1 r=1 #打印执行结果 q表示查询数,c表示连接数,r正在运行数(进程)
         
-
-

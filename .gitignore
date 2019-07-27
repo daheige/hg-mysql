@@ -1,0 +1,4 @@
+big_data_create.sql
+*.log
+logs
+test
