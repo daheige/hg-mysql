@@ -1,2 +1,2 @@
-# mysql性能优化研究
-    基于mysql,memcached,php7
+# mysql王者进阶
+    涵盖mysql安装维护，数据备份，迁移和复制，数据容灾，性能优化，数据库管理等等知识
