@@ -101,13 +101,13 @@
 
     每一个页中保存了行记录，innodb存储引擎是面向行的，也就是数据是按照行存储的。
     在每个页中，具体有如下结构：
-    file header文件头，记录了也偷的一些信息，checksum值，pervious page,next page的记录
-    page header 记录了页的状态信息和存储信息，首个记录的position
-    infimum+supremum  innodb每个数据页有两个虚拟行记录，用来限定记录边界
-    Row records       行记录，实际对于表的行数据信息
-    free space        空闲空间，同样是链表结构，当一个数据记录删除后，就会加入到空间链表中
-    page directory    存放了记录的相对位置
-    file trailer      innodb利用来保证页完整写入磁盘
+    file header         文件头，记录了页头的一些信息，checksum值，pervious page,next page的记录
+    page header         记录了页的状态信息和存储信息，首个记录的position
+    infimum+supremum    innodb每个数据页有两个虚拟行记录，用来限定记录边界
+    Row records         行记录，实际对于表的行数据信息
+    free space          空闲空间，同样是链表结构，当一个数据记录删除后，就会加入到空间链表中
+    page directory      存放了记录的相对位置
+    file trailer        innodb利用来保证页完整写入磁盘
 # 行
     innodb存储引擎面向行的，数据按照行存储。对于innodb存储有两种文件格式，一种叫antelope,一种是
     barracuda.
